@@ -5,7 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "jayson": "^2.0.1",
-    "socket.io-client": "^1.4.6"
+    "socket.io-client": "^1.4.6",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
